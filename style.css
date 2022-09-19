@@ -9,8 +9,21 @@ html {
   box-sizing: inherit;
 }
 
+:root {
+  --white: hsl(0, 0%, 100%);
+  --main-red: hsl(352, 59%, 47%);
+
+  /* Breakpoints 620px */
+
+  --medium: 620px;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--white);
   line-height: 4;
 }
