@@ -13,17 +13,45 @@ html {
   --white: hsl(0, 0%, 100%);
   --main-red: hsl(352, 59%, 47%);
 
-  /* Breakpoints 620px */
+  /* FONT SIZES */
 
-  --medium: 620px;
+  --font-sm: 0.9rem;
+  --font-lg: 1.8rem;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: var(--font-lg);
   font-weight: 400;
   color: var(--white);
   line-height: 4;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.nav {
+  background-color: var(--main-red);
+}
+
+.nav__links {
+  text-align: right;
+  height: max-content;
+}
+
+.nav__links a {
+  font-size: var(--font-sm);
+  padding: 1em;
+}
+
+@media (min-width: 620px) {
+  .nav__links a {
+    font-size: var(--font-lg);
+  }
 }
