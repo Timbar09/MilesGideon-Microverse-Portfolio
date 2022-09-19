@@ -11,7 +11,9 @@ html {
 
 :root {
   --white: hsl(0, 0%, 100%);
+  --main-white: hsl(0, 0%, 94%);
   --main-red: hsl(352, 59%, 47%);
+  --main-blue: hsl(222, 29%, 38%);
 
   /* FONT SIZES */
 
@@ -54,4 +56,53 @@ a:active {
   .nav__links a {
     font-size: var(--font-lg);
   }
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
+}
+
+@media (min-height: 620px) {
+  .projects-section {
+    font-size: var(--font-sm);
+    padding: 5rem 1rem;
+  }
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+
+.projects-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.project {
+  background: var(--main-white);
+  box-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.5);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.project-image {
+  display: block;
+  height: calc(100% - 7rem);
+  width: 100%;
+}
+
+.project-title {
+  margin: 0;
+  height: 3rem;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+  color: var(--main-blue);
 }
